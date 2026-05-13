@@ -1,0 +1,8 @@
+on:
+  repository_dispatch:
+    types:
+      - incident_report
+jobs:
+  print_status:
+    name: print
+    run : echo "ur key is ${{secrets.GH_KEY}}"
